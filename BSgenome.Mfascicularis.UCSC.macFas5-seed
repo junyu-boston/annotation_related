@@ -1,0 +1,17 @@
+Package: BSgenome.Mfascicularis.UCSC.macFas5
+Title: Full genome sequences for Macaca fascicularis (UCSC version macFas5)
+Description: Full genome sequences for Macaca fascicularis as provided by (macFas5, Washington University (WashU) GCA_000364345.1) and stored in Biostrings objects.
+Version: 1.0.0
+organism: Macaca fascicularis
+common_name: Crab Eating Monkey
+provider: UCSC
+provider_version: macFas5
+release_date:  Jun 2013
+release_name: Macaca_fascicularis_5.0
+source_url: http://hgdownload.soe.ucsc.edu/goldenPath/macFas5/bigZips/
+organism_biocview: Macaca_fascicularis
+BSgenomeObjname: Mfascicularis
+SrcDataFiles: macFas5.2bit from http://hgdownload.soe.ucsc.edu/goldenPath/macFas5/bigZips/
+PkgExamples: genome$GL896898  # same as genome[["GL896898"]]
+seqs_srcdir: D:\dicerna\annotations\monkey\
+seqfile_name: macFas5.2bit
