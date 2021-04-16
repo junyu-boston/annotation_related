@@ -20,4 +20,21 @@ GCF_000364345_1_Macaca_fascicularis_5_0_assembly_report %>%
 # %>%
 #filter(`Assigned-Molecule` != "na") 
 write_tsv(mf5_NCBI2Ensembl, "../data/mf5_NCBI2Ensembl.txt", col_names = F, eol = "\n")
+
+# https://github.com/dpryan79/ChromosomeMappings
+inputGTF="GCF_000364345.1_Macaca_fascicularis_5.0_genomic.gtf.gz"
+outputGTF="Macaca_fascicularis_5.0_genomic.Refseq_v101.gtf.gz"
+match="mf5_NCBI2Ensembl.txt"
+cvbio UpdateContigNames \
+-i $inputGTF \
+-o $outputGTF \
+-m $match \
+--comment-chars '#' \
+--columns 0 \
+--skip-missing false
+
+
+GTF="/data/genomics/Jun/references/NCBI.Macaca_facicularis_release_101/Macaca_fascicularis_5.0_genomic.Refseq_v101.gtf.gz"
+
+
 ```
